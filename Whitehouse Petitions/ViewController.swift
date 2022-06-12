@@ -26,7 +26,7 @@ class ViewController: UITableViewController {
         cell.detailTextLabel?.text = "Subtitle goes here"
         return cell
     }
-
+    
 
 }
 

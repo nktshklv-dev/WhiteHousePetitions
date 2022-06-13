@@ -44,6 +44,12 @@ class ViewController: UITableViewController {
         
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "detail") as? DetailViewController
+        vc!.detailItem = petitions[indexPath.row]
+        navigationController?.pushViewController(vc!, animated: true)
+    }
+    
 
 }
 

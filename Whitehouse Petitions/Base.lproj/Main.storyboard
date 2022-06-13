@@ -3,6 +3,7 @@
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -52,6 +53,47 @@
             </objects>
             <point key="canvasLocation" x="1690.6542056074766" y="65.442764578833703"/>
         </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="Erl-Bn-fsG">
+            <objects>
+                <viewController storyboardIdentifier="detail" id="a1z-u0-LlM" customClass="DetailViewController" customModule="Whitehouse_Petitions" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Get-Sw-x49">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nbq-0O-v3V">
+                                <rect key="frame" x="0.0" y="44" width="428" height="848"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tFQ-Fe-ML9">
+                                        <rect key="frame" x="0.0" y="0.0" width="428" height="848"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Ma6-Eu-Wcr" firstAttribute="trailing" secondItem="tFQ-Fe-ML9" secondAttribute="trailing" id="IN8-7K-fHU"/>
+                                    <constraint firstItem="tFQ-Fe-ML9" firstAttribute="top" secondItem="Ma6-Eu-Wcr" secondAttribute="top" id="Vt3-4S-A1m"/>
+                                    <constraint firstItem="Ma6-Eu-Wcr" firstAttribute="bottom" secondItem="tFQ-Fe-ML9" secondAttribute="bottom" id="fas-v5-bMp"/>
+                                    <constraint firstItem="tFQ-Fe-ML9" firstAttribute="leading" secondItem="Ma6-Eu-Wcr" secondAttribute="leading" id="r2s-Hk-JFa"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="zwe-LA-Fha"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Ma6-Eu-Wcr"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9Tm-fH-kIx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="labelText" destination="tFQ-Fe-ML9" id="Zml-lr-qWS"/>
+                        <outlet property="scrollView" destination="Nbq-0O-v3V" id="PeJ-Hy-teE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="crv-gK-7D9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2548.5981308411215" y="83.585313174946009"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ffp-B9-CZP">
             <objects>
@@ -77,6 +119,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Imz-Si-FsT" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DSu-Sw-nJY">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

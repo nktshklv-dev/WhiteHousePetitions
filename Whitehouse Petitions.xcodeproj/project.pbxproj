@@ -60,17 +60,25 @@
 		11D49F222854A4BA009CBF98 /* Whitehouse Petitions */ = {
 			isa = PBXGroup;
 			children = (
+				11D49F5D285758AE009CBF98 /* Model */,
 				11D49F232854A4BA009CBF98 /* AppDelegate.swift */,
 				11D49F252854A4BA009CBF98 /* SceneDelegate.swift */,
 				11D49F272854A4BA009CBF98 /* ViewController.swift */,
-				11D49F3728561465009CBF98 /* Petition.swift */,
-				11D49F39285614E1009CBF98 /* Petitions.swift */,
 				11D49F292854A4BA009CBF98 /* Main.storyboard */,
 				11D49F2C2854A4BB009CBF98 /* Assets.xcassets */,
 				11D49F2E2854A4BB009CBF98 /* LaunchScreen.storyboard */,
 				11D49F312854A4BB009CBF98 /* Info.plist */,
 			);
 			path = "Whitehouse Petitions";
+			sourceTree = "<group>";
+		};
+		11D49F5D285758AE009CBF98 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				11D49F3728561465009CBF98 /* Petition.swift */,
+				11D49F39285614E1009CBF98 /* Petitions.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
